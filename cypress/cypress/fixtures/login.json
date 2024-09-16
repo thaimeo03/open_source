@@ -1,0 +1,18 @@
+{
+  "validUser": {
+    "email": "thai@gmail.com",
+    "password": "123456"
+  },
+  "invalidUser": {
+    "email": "wronguser@example.com",
+    "password": "wrongpassword"
+  },
+  "invalidEmailFormat": {
+    "email": "invalid-email",
+    "password": "somepassword"
+  },
+  "invalidPasswordFormat": {
+    "email": "thai@gmail.com",
+    "password": "12345"
+  }
+}
