@@ -1,2 +1,2 @@
-// require("./first-script.spec.js")
-require("./auth/login.spec")
+// require("./auth/login.spec")
+require("./waits/load-element.spec")

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delayed Element Test</title>
+  <style>
+    .element {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Testing Element Delay</h1>
+  <div id="message">Please wait for the submit button...</div>
+
+  <input id="email" type="text" name="email" placeholder="Enter email" style="display: none;">
+
+  <input id="password" type="password" name="password" placeholder="Enter password" style="display: none;">
+
+  <button id="btn" type="button" value="Submit" style="display: none;">Submit</button>
+
+  <div style="margin-top: 50px; display: flex; gap: 10px;">
+    <div class="element" id="element_1">Element 1</div>
+    <div class="element" id="element_2">Element 2</div>
+    <div class="element" id="element_3">Element 3</div>
+    <div class="element" id="element_4">Element 4</div>
+    <div class="element" id="element_5">Element 5</div>
+    <div class="element" id="element_6">Element 6</div>
+  </div>
+  
+  <script>
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const submit = document.getElementById('btn');
+
+    const element_1 = document.getElementById('element_1');
+    const element_2 = document.getElementById('element_2');
+    const element_3 = document.getElementById('element_3');
+    const element_4 = document.getElementById('element_4');
+    const element_5 = document.getElementById('element_5');
+    const element_6 = document.getElementById('element_6');
+
+    // Timeout to show the elements
+    setTimeout(() => {
+      email.style.display = 'block';
+    }, 2000)
+
+    setTimeout(() => {
+      password.style.display = 'block';
+    }, 2500)
+
+    setTimeout(() => {
+      submit.style.display = 'block';
+    }, 3000);
+
+    setTimeout(() => {
+      element_1.style.display = 'block';
+    }, 4000);
+
+    setTimeout(() => {
+      element_2.style.display = 'block';
+    }, 5000);
+
+    setTimeout(() => {
+      element_3.style.display = 'block';
+    }, 6000);
+
+    setTimeout(() => {
+      element_4.style.display = 'block';
+    }, 7000);
+
+    setTimeout(() => {
+      element_5.style.display = 'block';
+    }, 11000);
+
+    setTimeout(() => {
+      element_6.style.display = 'block';
+    }, 9000);
+
+    // Events
+    submit.addEventListener('click', () => {
+      setTimeout(() => {
+        window.location.href = 'page_1.html';
+      }, 4000)
+    })
+  </script>
+</body>
+</html>
